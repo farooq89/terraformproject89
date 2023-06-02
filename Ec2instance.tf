@@ -10,7 +10,7 @@ resource "aws_instance" "example" {
   # Specify other instance configuration options as needed
   key_name      = "dotnetapp"
   subnet_id     = "subnet-0ef0c2b1ec9f62c79"
-  security_group_ids = ["sg-0ccc6a0ae4562052e"]
+  security_group_ids = "sg-0ccc6a0ae4562052e"
 
   tags = {
     Name = "MyInstance"
