@@ -30,7 +30,7 @@ resource "aws_security_group" "example" {
 }
 
 
-resource "aws_instance" "example" {
+resource "aws_instance" "ubuntu" {
   ami           = "ami-053b0d53c279acc90"  
   instance_type = "t2.micro"  # Set the desired instance type
 
