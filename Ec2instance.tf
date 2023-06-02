@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_security_group" "example" {
+resource "aws_security_group" "sg" {
   name        = "my-security-group"
   description = "Example security group"
 
@@ -30,8 +30,8 @@ resource "aws_security_group" "example" {
 }
 
 
-resource "aws_instance" "example" {
-  ami           = "ami-0130c3a072f3832ff"  
+resource "aws_instance" "NEW" {
+  ami           = "ami-053b0d53c279acc90"  
   instance_type = "t2.micro"  # Set the desired instance type
 
   # Specify other instance configuration options as needed
