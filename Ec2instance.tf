@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-053b0d53c279acc90"  
+  ami           = "ami-0a0c8eebcdd6dcbd0"  
   instance_type = "t2.micro"  # Set the desired instance type
 
   # Specify other instance configuration options as needed
